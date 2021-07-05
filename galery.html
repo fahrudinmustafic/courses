@@ -4,16 +4,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="javascript/script.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Courses</title>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark meni" style="padding:10px; position: sticky;
+    top: 0;
+    background-color: green; border-top: 0.5px solid #f3f3f3; border-bottom: 0.5px solid #f3f3f3;">
       <div class="container-fluid hover" >
-       
-        
-        <a class="navbar-brand active" href="index.html">  <i class="fas fa-home" style="color: hsl(24, 79%, 48%); font-size: 23px;"></i></a>
+        <a class="navbar-brand active" href="index.html" >  <i class="fas fa-home" style="color: hsl(24, 79%, 48%); font-size: 20px;"></i></a>
         <a class="navbar-brand" href="news.html">News</a>
         <a class="navbar-brand" href="contact.html">Contact</a>
         <a class="navbar-brand" href="aboutus.html">About us</a>
@@ -21,15 +22,14 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown" >
-          <ul class="navbar-nav" >
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav"  >
             <li class="nav-item dropdown" >
               <a class="navbar-brand" class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Courses
               </a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a class="dropdown-item" href="allcourse.html">All courses</a></li>
-                <li role="separator" class="divider"></li>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" >
+                <li><a class="dropdown-item" href="allcourse.html">All courses</a></li>  
                 <li><a class="dropdown-item" href="html.html">Html</a></li>
                 <li><a class="dropdown-item" href="javascript.html">Java script</a></li>
                 <li><a class="dropdown-item" href="Python.html">Python</a></li>  
@@ -49,11 +49,6 @@
               </ul>
             </li>
           </ul>
-   
-
-
-
-
         <ul class="navbar-nav" >
           <li class="nav-item dropdown" >
             <a class="navbar-brand" class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">    
@@ -61,249 +56,21 @@
           </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" >
               <a><label  for="Search"></label><input class="" type="text" id="login" name="Search" placeholder="Search"  style="font-size: 15px; float: center;"> </a>
-              <a><label  for="submit"></label><input class="" type="submit" id="Search" name="Search" placeholder="button"  style="font-size: 10px; float: right !important; background-color: rgb(221, 126, 2); border-radius: 20px;"> </a>
+              <a><label  for="Search"></label><input class="" type="submit" id="Search" name="Search" placeholder="button"  style="font-size: 10px; float: right !important; background-color: rgb(221, 126, 2); border-radius: 20px;"> </a>
             </ul>
           </li>
         </ul>
-
-
-
-
-
-
-
     </nav>
-    <style>
-        body {
-          font-family: Verdana, sans-serif;
-          margin: 0;
-        }
-        
-        * {
-          box-sizing: border-box;
-        }
-        
-        .row > .column {
-          padding: 0 8px;
-        }
-        
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        
-        .column {
-          float: left;
-          width: 25%;
-        }
-        
-        /* The Modal (background) */
-        .modal {
-          display: none;
-          position: fixed;
-          z-index: 1;
-          padding-top: 100px;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          overflow: auto;
-          background-color: black;
-        }
-        
-        /* Modal Content */
-        .modal-content {
-          position: relative;
-          background-color: #fefefe;
-          margin: auto;
-          padding: 0;
-          width: 90%;
-          max-width: 1200px;
-        }
-        
-        /* The Close Button */
-        .close {
-          color: white;
-          position: absolute;
-          top: 10px;
-          right: 25px;
-          font-size: 35px;
-          font-weight: bold;
-        }
-        
-        .close:hover,
-        .close:focus {
-          color: #999;
-          text-decoration: none;
-          cursor: pointer;
-        }
-        
-        .mySlides {
-          display: none;
-        }
-        
-        .cursor {
-          cursor: pointer;
-        }
-        
-        /* Next & previous buttons */
-        .prev,
-        .next {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 16px;
-          margin-top: -50px;
-          color: white;
-          font-weight: bold;
-          font-size: 20px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-          -webkit-user-select: none;
-        }
-        
-        /* Position the "next button" to the right */
-        .next {
-          right: 0;
-          border-radius: 3px 0 0 3px;
-        }
-        
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-          background-color: rgba(0, 0, 0, 0.8);
-        }
-        
-        /* Number text (1/3 etc) */
-        .numbertext {
-          color: #f2f2f2;
-          font-size: 12px;
-          padding: 8px 12px;
-          position: absolute;
-          top: 0;
-        }
-        
-        img {
-          margin-bottom: -4px;
-        }
-        
-        .caption-container {
-          text-align: center;
-          background-color: black;
-          padding: 2px 16px;
-          color: white;
-        }
-        
-        .demo {
-          opacity: 0.6;
-        }
-        
-        .active,
-        .demo:hover {
-          opacity: 1;
-        }
-        
-        img.hover-shadow {
-          transition: 0.3s;
-        }
-        
-        .hover-shadow:hover {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-        </style>
-
-
+    <div> 
+    </div>
+  </div>
+</div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<h2 class="h2 logo " style="text-align: left; width: 100%;"><i class="fab fa-artstation " style=" font-size: 25px; float: left;"></i> <p id="demo" style="float: right; font-size: 13px; padding-top: 10px;"></p> Code Academy </h2>
   </head>
   <body> 
 
-    <h2 style="text-align:center">Galery</h2>
-
-<div class="row">
-  <div class="column">
-    <img src="slide1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="slide2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="slide3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-  </div>
- 
-</div>
-
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="slide1.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="slide2.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="slide3.jpg" style="width:100%">
-    </div>
     
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
- 
-  </div>
-</div>
-
-<script>
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-    
-
 
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -324,51 +91,13 @@ function showSlides(n) {
       <p style="padding-top: 260px;"> © 2021 Code Academy. All Rights Reserved.</p>
   
       <div>      
-       <a  href="https://www.facebook.com/"><img class="social" src="facebook.png"/></a>
-      <a href="www.youtube.com"><img  class="social" src="youtube.jpg"/></a>
-      <a href="www.youtube.com"><img  class="social" src="instagram.jpg"/></a>
+       <a  href="https://www.facebook.com/"><img class="social" src="img/footer/facebook.png"/></a>
+      <a href="www.youtube.com"><img  class="social" src="img/footer/youtube.jpg"/></a>
+      <a href="www.instagram.com"><img  class="social" src="img/footer/instagram.jpg"/></a>
       </div>
-  <script>
-  var myVar = setInterval(myTimer, 1000);
-  
-  function myTimer() {
-    var d = new Date();
-    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
-  }
-  </script>
+ 
   </footer>
-  
-  
-  
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 20px;
-    }
-    
-    #myBtn {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 30px;
-      z-index: 99;
-      font-size: 18px;
-      border: none;
-      outline: none;
-      background-color: #a7490a;
-      color: white;
-      cursor: pointer;
-      padding: 5px;
-      border-radius: 4px;
-    }
-    
-    #myBtn:hover {
-      background-color: darkorange;
-    }
-    </style>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-  
-    
     <script>
     //Get the button
     var mybutton = document.getElementById("myBtn");
@@ -390,8 +119,14 @@ function showSlides(n) {
       document.documentElement.scrollTop = 0;
     }
     </script>
-  
+   <script>
+    var myVar = setInterval(myTimer, 1000);
+    
+    function myTimer() {
+      var d = new Date();
+      document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+    }
+    </script>
 
   </body>
-  
 </html>

@@ -4,16 +4,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="javascript/script.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Courses</title>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark meni" style="padding:10px; position: sticky;
+    top: 0;
+    background-color: green; border-top: 0.5px solid #f3f3f3; border-bottom: 0.5px solid #f3f3f3;">
       <div class="container-fluid hover" >
-       
-        
-        <a class="navbar-brand active" href="index.html">  <i class="fas fa-home" style="color: hsl(24, 79%, 48%); font-size: 23px;"></i></a>
+        <a class="navbar-brand " href="index.html" >  <i class="fas fa-home" style="color: hsl(24, 79%, 48%); font-size: 20px;"></i></a>
         <a class="navbar-brand" href="news.html">News</a>
         <a class="navbar-brand" href="contact.html">Contact</a>
         <a class="navbar-brand" href="aboutus.html">About us</a>
@@ -21,15 +22,14 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown" >
-          <ul class="navbar-nav" >
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav"  >
             <li class="nav-item dropdown" >
-              <a class="navbar-brand" class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="navbar-brand active" class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Courses
               </a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a class="dropdown-item" href="allcourse.html">All courses</a></li>
-                <li role="separator" class="divider"></li>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" >
+                <li><a class="dropdown-item" href="allcourse.html">All courses</a></li>  
                 <li><a class="dropdown-item" href="html.html">Html</a></li>
                 <li><a class="dropdown-item" href="javascript.html">Java script</a></li>
                 <li><a class="dropdown-item" href="Python.html">Python</a></li>  
@@ -49,11 +49,6 @@
               </ul>
             </li>
           </ul>
-   
-
-
-
-
         <ul class="navbar-nav" >
           <li class="nav-item dropdown" >
             <a class="navbar-brand" class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">    
@@ -61,56 +56,51 @@
           </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" >
               <a><label  for="Search"></label><input class="" type="text" id="login" name="Search" placeholder="Search"  style="font-size: 15px; float: center;"> </a>
-              <a><label  for="submit"></label><input class="" type="submit" id="Search" name="Search" placeholder="button"  style="font-size: 10px; float: right !important; background-color: rgb(221, 126, 2); border-radius: 20px;"> </a>
+              <a><label  for="Search"></label><input class="" type="submit" id="Search" name="Search" placeholder="button"  style="font-size: 10px; float: right !important; background-color: rgb(221, 126, 2); border-radius: 20px;"> </a>
             </ul>
           </li>
         </ul>
-
-
-
-
-
-
-
     </nav>
     <div> 
     </div>
   </div>
 </div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<h2 class="h2 logo " style="text-align: left; width: 100%;"><i class="fab fa-artstation " style=" font-size: 25px; float: left;"></i> <p id="demo" style="float: right; font-size: 13px; padding-top: 10px;"></p> Code Academy </h2>
   </head>
   <body> 
-    <h2 class="h2">All courses</i></h2>
+
     <div style="margin:30px 50px 50px 210px;"> 
      
         <div class="box">
           <a href="Python.html">
-        <img src="robotika-kurs.jpg"  />   
+        <img src="img/allcourses/robotika-kurs.jpg"  />   
        <a href="Python.html"><h1 class="h1"><i class="far fa-shopping-cart shop"></i> Python- Course</h1></a> 
       </a>
         <div>
-          <a href="python.html"><img class="img1" src="dzemil.png"/></a>
+          <a href="python.html"><img class="img1" src="img/allcourses/dzemil.png"/></a>
           <h3 class="h3">36 lessons</h3>
           <p class="p">Džemil Dupljak</p>
         </div>
       </div>
       <div class="box">
         <a href="html.html">
-      <img src="HTML.jpg" />
+      <img src="img/allcourses/HTML.jpg" />
      <a href="html.html"><h1 class="h1"> <i class="far fa-shopping-cart shop"></i> Html- Course</h1></a> 
     </a>
       <div>
-        <a href="html.html"><img class="img1" src="dzemil.png"/></a>
+        <a href="html.html"><img class="img1" src="img/allcoursesdzemil.png"/></a>
         <h3 class="h3">36 lessons</h3>
         <p class="p">Džemil Dupljak</p>
       </div>
     </div>
     <div class="box">
       <a href="javascript.html">
-    <img src="js.jpg"  />
+    <img src="img/allcourses/js.jpg"  />
    <a href="javascript.html"><h1 class="h1"> <i class="far fa-shopping-cart shop"></i> Java script- Course</h1></a> 
   </a>
     <div>
-      <a href="javascript.html"><img class="img1" src="dzemil.png"/></a>
+      <a href="javascript.html"><img class="img1" src="img/allcourses/dzemil.png"/></a>
       <h3 class="h3">36 lessons</h3>
       <p class="p">Džemil Dupljak</p>
     </div>
@@ -134,9 +124,9 @@
       <p style="padding-top: 260px;"> © 2021 Code Academy. All Rights Reserved.</p>
   
       <div>      
-       <a  href="https://www.facebook.com/"><img class="social" src="facebook.png"/></a>
-      <a href="www.youtube.com"><img  class="social" src="youtube.jpg"/></a>
-      <a href="www.youtube.com"><img  class="social" src="instagram.jpg"/></a>
+       <a  href="https://www.facebook.com/"><img class="social" src="img/footer/facebook.png"/></a>
+      <a href="https://www.youtube.com/"><img  class="social" src="img/footer/youtube.jpg"/></a>
+      <a href="https://www.instagram.com/"><img  class="social" src="img/footer/instagram.jpg"/></a>
       </div>
   <script>
   var myVar = setInterval(myTimer, 1000);
